@@ -750,7 +750,7 @@ Upon successful execution, you should see:
 
 ```
 ================================================================================
-CREDIT CARD FRAUD DETECTION PROJECT
+ANOMALY DETECTION IN CREDIT CARD TRANSACTIONS
 ================================================================================
 Loading data...
 Data loaded: 284807 rows, 31 columns
@@ -773,7 +773,3 @@ All results and visualizations will be saved in the `output/` and `reports/figur
 - Kaggle for providing the Credit Card Fraud Detection dataset
 - Scikit-learn and imbalanced-learn communities for excellent ML libraries
 - Open source community for various tools and libraries used in this project
-
----
-
-**Note:** This project is created for educational purposes as part of a college-level machine learning course. All code is provided for learning and research purposes.

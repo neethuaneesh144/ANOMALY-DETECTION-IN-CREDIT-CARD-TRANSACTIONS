@@ -1,5 +1,5 @@
 """
-Credit Card Fraud Detection Project
+Anomaly Detection in Credit Card Transactions
 Main script to run all models and generate results
 """
 
@@ -597,7 +597,7 @@ def main():
     args = parser.parse_args()
     
     print("=" * 80)
-    print("CREDIT CARD FRAUD DETECTION PROJECT")
+    print("ANOMALY DETECTION IN CREDIT CARD TRANSACTIONS")
     print("=" * 80)
     
     # Step 1: Load data

@@ -1,6 +1,6 @@
 Warning: TensorFlow/Keras not available. Autoencoder will not work. (module 'tensorflow' has no attribute 'keras')
 ================================================================================
-CREDIT CARD FRAUD DETECTION PROJECT
+ANOMALY DETECTION IN CREDIT CARD TRANSACTIONS
 ================================================================================
 Loading data...
 Data loaded: 284807 rows, 31 columns
