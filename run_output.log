@@ -1,0 +1,100 @@
+Warning: TensorFlow/Keras not available. Autoencoder will not work. (module 'tensorflow' has no attribute 'keras')
+================================================================================
+CREDIT CARD FRAUD DETECTION PROJECT
+================================================================================
+Loading data...
+Data loaded: 284807 rows, 31 columns
+
+=== Data Check ===
+Missing values: 0
+Duplicates: 1081
+Normal transactions: 284315
+Fraud transactions: 492
+Fraud percentage: 0.17%
+
+================================================================================
+EXPLORATORY DATA ANALYSIS (EDA)
+================================================================================
+Saved class imbalance plot to reports/figures/class_imbalance.png
+Saved amount distribution plot to reports/figures/amount_distribution.png
+Saved log-scale amount distribution plot to reports/figures/amount_distribution_log.png
+
+=== Preprocessing ===
+After removing duplicates: 283726 rows
+Created Amount_log feature
+Saved correlation heatmap to reports/figures/correlation_heatmap.png
+
+=== Splitting Data ===
+Train: 204282, Val: 22698, Test: 56746
+
+================================================================================
+SUPERVISED MODELS - NO BALANCING
+================================================================================
+
+=== Training Supervised Models (none) ===
+Training Logistic Regression...
+Training Random Forest...
+Training SVM...
+
+================================================================================
+SUPERVISED MODELS - SMOTE
+================================================================================
+
+=== Balancing Data (smote) ===
+After SMOTE: 407884 samples
+
+=== Training Supervised Models (smote) ===
+Training Logistic Regression...
+Training Random Forest...
+Training SVM...
+
+================================================================================
+SUPERVISED MODELS - UNDERSAMPLING
+================================================================================
+
+=== Balancing Data (undersample) ===
+After undersampling: 680 samples
+
+=== Training Supervised Models (undersample) ===
+Training Logistic Regression...
+Training Random Forest...
+
+================================================================================
+UNSUPERVISED MODELS
+================================================================================
+
+--- Contamination: 0.01 ---
+
+=== Training Unsupervised Models (contamination=0.01) ===
+Training Isolation Forest...
+Training One-Class SVM...
+Training LOF...
+
+--- Contamination: 0.02 ---
+
+=== Training Unsupervised Models (contamination=0.02) ===
+Training Isolation Forest...
+Training One-Class SVM...
+Training LOF...
+
+================================================================================
+EVALUATION
+================================================================================
+
+Results saved to results_summary.csv
+Saved imbalance comparison plot to reports/figures/imbalance_comparison.png
+Saved precision/recall vs threshold plot to reports/figures/pr_vs_threshold_Isolation_Forest_cont_0.01.png
+Saved precision/recall vs threshold plot to reports/figures/pr_vs_threshold_One-Class_SVM_cont_0.01.png
+Saved precision/recall vs threshold plot to reports/figures/pr_vs_threshold_LOF_cont_0.01.png
+Saved precision/recall vs threshold plot to reports/figures/pr_vs_threshold_Isolation_Forest_cont_0.02.png
+Saved precision/recall vs threshold plot to reports/figures/pr_vs_threshold_One-Class_SVM_cont_0.02.png
+Saved precision/recall vs threshold plot to reports/figures/pr_vs_threshold_LOF_cont_0.02.png
+
+Best Model: Random Forest (SMOTE)
+F1 Score: 0.8202
+Precision: 0.8795
+Recall: 0.7684
+
+================================================================================
+DONE!
+================================================================================
